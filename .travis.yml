@@ -20,7 +20,7 @@ script:
 before_install:
   - gem install bundler
   - gem install travis
-  - travis encrypt "123"
+  - travis encrypt MY_SECRET_ENV=$HEROKU_API_KEY --add env.global
 
 # Defini que o processo de Deploy será na Plataforma Heroku. É necessário informar o nome da APP criada no Heroku
 deploy:
