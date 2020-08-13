@@ -18,8 +18,7 @@ install:
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script:
   - python test.py
-#  - travis encrypt TESTE=$HEROKU_API_KEY
-#  - echo $TESTE
+  - travis encrypt SOMEVAR=$HEROKU_API_KEY
 
 # Defini que o processo de Deploy será na Plataforma Heroku. É necessário informar o nome da APP criada no Heroku
 deploy:
@@ -27,5 +26,5 @@ deploy:
   skip_cleanup: true
   edge: true
   api-key: 
-    secure: $HEROKU_API_KEY
+    secure: $SOMEVAR
   app: app4linux
