@@ -20,6 +20,7 @@ script:
 before_install:
   - gem install bundler
   - gem install travis
+  - gem install dpl
   - travis encrypt TESTE=$HEROKU_API_KEY
   - echo $TESTE
 
