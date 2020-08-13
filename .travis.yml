@@ -17,9 +17,9 @@ script:
   - python test.py
 
 
-#before_install:
-#  - gem install travis
-#  - travis encrypt $HEROKU_API_KEY --add deploy.api_key
+before_install:
+  - gem install travis
+  - travis encrypt "123"
 
 # Defini que o processo de Deploy será na Plataforma Heroku. É necessário informar o nome da APP criada no Heroku
 deploy:
