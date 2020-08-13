@@ -11,16 +11,13 @@ sudo: required
 # Instalação de Módulos que são necessários para a Aplicação.
 install:
   - pip install flask
+  - gem install bundler
+  - gem install travis
+  - gem install dpl
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script:
   - python test.py
-
-
-before_install:
-  - gem install bundler
-  - gem install travis
-  - gem install dpl
   - travis encrypt TESTE=$HEROKU_API_KEY
   - echo $TESTE
 
