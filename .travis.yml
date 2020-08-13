@@ -19,7 +19,7 @@ script:
 
 before_install:
   - gem install travis
-  - travis encrypt $(heroku auth:token) --add deploy.api_key
+  - travis encrypt $HEROKU_API_KEY --add deploy.api_key
 
 # Defini que o processo de Deploy será na Plataforma Heroku. É necessário informar o nome da APP criada no Heroku
 deploy:
