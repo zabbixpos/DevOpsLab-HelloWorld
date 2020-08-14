@@ -14,14 +14,13 @@ install:
   - gem install bundler
   - gem install travis
   - gem install dpl
-  - touch .travis.yml
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script:
   - python test.py
 #  - travis encrypt $HEROKU_API_KEY --add deploy.api_key --pro
 # - travis encrypt $HEROKU_API_KEY
-  - travis encrypt MY_SECRET_ENV=$HEROKU_API_KEY --add env.global
+  - echo "y" | travis encrypt MY_SECRET_ENV=$HEROKU_API_KEY --add env.global
 
 # Defini que o processo de Deploy será na Plataforma Heroku. É necessário informar o nome da APP criada no Heroku
 deploy:
