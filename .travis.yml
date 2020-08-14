@@ -11,9 +11,9 @@ sudo: required
 # Instalação de Módulos que são necessários para a Aplicação.
 install:
   - pip install flask
-  - gem install bundler
+  #- gem install bundler
   - gem install travis
-  - gem install dpl
+  #- gem install dpl
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script:
@@ -25,8 +25,8 @@ script:
 # Defini que o processo de Deploy será na Plataforma Heroku. É necessário informar o nome da APP criada no Heroku
 deploy:
   provider: heroku
-  skip_cleanup: true
+  #skip_cleanup: true
   edge: true
   api-key: 
-    secure: $HEROKU_API_KEY
+    secure:
   app: zabbixpos
