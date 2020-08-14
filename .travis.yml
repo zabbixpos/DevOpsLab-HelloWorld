@@ -29,4 +29,4 @@ deploy:
   edge: true
   api-key: 
     secure: $MY_SECRET_ENV
-  app: app4linux
+  app: zabbixpos
