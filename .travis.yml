@@ -26,6 +26,6 @@ deploy:
   edge: true
   api-key: 
     secure: "c9isxBUDiYEZW3WIC0ZfYt1ANkib+2UjZblJJkJXnm0jav0naUBY0P8loGnSUgX4zkgmJLJZxp2TStJ0rXKIjmgL+1ScpBjIRSHgXOtrPK8M+wEngWU5kcgBQZN4E5c2C1EV1ZMhxj3Kq4UJSlgASBDQ3t1bPafHAtgvhbroo2UHoyn3Lw2AnpQOR+ZWwdVjnSYbBa+AgZTSeGQarca++H06QvORFjBcZYEhNt6LcZO85dhXH7+kqn2zhpgNR/awATO5fUkeO4pP2a1vnPRpLSEuwzn8OIHcvmpy4Ad5ESLL9zNc8Xf4gtIPtBxR2vfe+YrmF9oPlsX+nDtcSfgE/YIXct2HKr0NXhl3/dSixhSmgM1H9AY2msT8N1+2JRsBqfDYjL2Yokvizyz2iqyWJGEmjclJzu/+cqOaCMfQSiblpGS3zfrCfzsf29SRadj53LL6xgnfK3RnZCz2dPLKtO1wRcpx4Qrl0RyaqRutICG8SCMgoU2S0XrANdve8DsLp2G+lLz8c4/kqvXSOm9R7gtkG2roq00fb5l+4HaMzGH3jJc8+h2tkZoEG1KBG/76RmMRhPR2H/xCSxcMH7NWXHrt/tOU04930wdbSNGjrNZ3JowqLRVSqHqcwg/9iuyI4tV9XkD7jZ0S4UTzySnPjIXtjM1/unq3+R+iXqYm4B4="
-  #app: zabbixpos
-
-#Teste
+  app: zabbixpos
+  on:
+    repo: zabbixpos/teste
