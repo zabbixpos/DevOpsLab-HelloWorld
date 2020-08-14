@@ -14,6 +14,7 @@ install:
   - gem install bundler
   - gem install travis
   - gem install dpl
+  - touch .travis.yml
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script:
