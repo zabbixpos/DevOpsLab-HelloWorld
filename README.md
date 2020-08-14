@@ -1,7 +1,7 @@
 # Trilha DevOps da 4Linux
 
 <!-- Altere a Flag abaixo com sua URL do Travis -->
-[![Build Status](https://travis-ci.com/zabbixpos/teste.svg?branch=master)](https://travis-ci.com/zabbixpos/teste)
+[![Build Status](https://travis-ci.org/zabbixpos/teste.svg?branch=master)](https://travis-ci.org/zabbixpos/teste)
 
 ## Aplicação criada para exemplificar o Ciclo de uma PipeLine DevOps
 
