@@ -20,6 +20,7 @@ script:
   - python test.py
 #  - travis encrypt $HEROKU_API_KEY --add deploy.api_key --pro
 # - travis encrypt $HEROKU_API_KEY
+  - travis encrypt MY_SECRET_ENV=$HEROKU_API_KEY --add env.global
 
 # Defini que o processo de Deploy será na Plataforma Heroku. É necessário informar o nome da APP criada no Heroku
 deploy:
@@ -27,5 +28,5 @@ deploy:
   skip_cleanup: true
   edge: true
   api-key: 
-    secure: "sPeQNGlqwpnNuBQbXBF/gZztcW/QTJjzcKXl00qK9WiURN5uzU3/GjiAWmkPZcZ6BrusJlDobNZXaXMZFdgaBQ8hJJmZO4xMvo28VLNPDes12auSaKbXNfwjEWKiY7r3foL+OwDQFxEH+dCPQ7P8FMrnTcRCmbnYFzP8tzxsfCtQhcjFOMyQka55896yjuogrGZHrDVdRkTuJluI8uLslXd7l38ezXIzcgi9pXwr8/wNxJ4MmL9SIc+267XJtHodf5BvU9nywd0w19XVfL0gCR6vezkdZc18nbrMksNBRuI5fow6E7vMgCIEkhCzkSM5uD+4pWeBK3fuE9A56QLJOZ7pzYHpVaIEYlyysg5graUhXDwqMFH+NhQKHu79IMAgRHgA/KMpT7c5OUyxB3GcOYpP0m7w6oC2TorFcNded0KJ5zXAJ/sWlt5KulwayQJm+R4MT4sjyUSVxjfF0FY789V8w96SmaJvhyfxEbvZS6+TjkYCWOy1YPK74tigkQBdG5NgspdLfXY4nqQs+btXMkJ7cKxASPmeqe0AZyMIHy2TzazQSEQ22uSUspj00RYxTh/ATpu0vWsPKvEqA2RhttYH27Q0bSwbY638OrKdE64Zo0JUxZ/Ea0H/nLsU9axnjrMe5I9r3C0elFDz4oziSZ5ufJYQT7Wb9iRxPzClNqA="
+    secure: $MY_SECRET_ENV
   app: app4linux
